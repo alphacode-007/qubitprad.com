@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Blog 1 | DigitalNotebook.com</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        display: flex;
+        min-height: 100vh;
+        flex-direction: column;
+        margin: 0;
+        background: #f3f7fa;
+      }
+
+      header {
+        padding: 1.25rem 1.5rem;
+        background: #1769aa;
+      }
+
+      header a {
+        color: #fff;
+        font: 700 1.6rem Georgia, "Times New Roman", serif;
+        text-decoration: none;
+      }
+
+      header a:hover {
+        text-decoration: underline;
+      }
+
+      main {
+        width: min(100% - 3rem, 760px);
+        flex: 1;
+        margin: 0 auto;
+        padding: 3rem 0;
+      }
+
+      h1 {
+        margin: 0 0 1.5rem;
+        color: #172b3a;
+        font: 700 2rem Georgia, "Times New Roman", serif;
+        text-align: left;
+      }
+
+      .post-date {
+        margin: 0 0 0.75rem;
+        font-family: Arial, sans-serif;
+        text-align: left;
+      }
+
+      .post-content {
+        min-height: 18rem;
+        text-align: left;
+        font: 1rem/1.7 Arial, sans-serif;
+      }
+
+      footer {
+        display: flex;
+        gap: 1.5rem;
+        margin-top: auto;
+        padding: 1.25rem 1.5rem;
+        background: #e8ecef;
+        font-family: Arial, sans-serif;
+      }
+
+      footer a {
+        color: #145a8d;
+        text-decoration: none;
+      }
+
+      footer a:hover {
+        text-decoration: underline;
+      }
+
+      @media (max-width: 640px) {
+        main {
+          width: min(100% - 2rem, 420px);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <a href="./">My Digital Notebook</a>
+    </header>
+    <main>
+      <article>
+        <p class="post-date">Date: <time datetime="2026-11-16">16 11 2026</time></p>
+        <h1>Travelling to Hilbert space.</h1>
+        <div class="post-content">
+          This is my first blog (I think you can see it!). I'm teaching myself linear algebra(collage doesn't) for learning quantum
+          mechanics. I'm using MIT OCW Prof. Gilbert Strang's lectures and Linear Algebra done right book.
+        </div>
+      </article>
+    </main>
+    <footer>
+      <a href="mailto:your-email@example.com">Contact Me</a>
+      <a href="about.html">About Me</a>
+    </footer>
+  </body>
+</html>
