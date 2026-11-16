@@ -2,10 +2,112 @@
 <html lang="en-US">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>DigitalNotebook.com</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        display: flex;
+        min-height: 100vh;
+        flex-direction: column;
+        margin: 0;
+        background: #f3f7fa;
+      }
+
+      header {
+        padding: 1.25rem 1.5rem;
+        background: #1769aa;
+      }
+
+      header a {
+        color: #fff;
+        font: 700 1.6rem Georgia, "Times New Roman", serif;
+        text-decoration: none;
+      }
+
+      nav {
+        padding: 0.8rem 1.5rem;
+        background: #fff;
+        border-bottom: 1px solid #d8e2ea;
+        font-family: Arial, sans-serif;
+      }
+
+      nav a {
+        color: #145a8d;
+        font-weight: 700;
+        text-decoration: none;
+      }
+
+      nav a:hover,
+      header a:hover {
+        text-decoration: underline;
+      }
+
+      main {
+        width: min(100% - 3rem, 760px);
+        flex: 1;
+        margin: 0 auto;
+        padding: 3rem 0;
+      }
+
+      article time {
+        color: #526574;
+        font-family: Arial, sans-serif;
+        font-size: 0.9rem;
+      }
+
+      article h1 {
+        margin: 0.5rem 0 0;
+        font: 700 2rem Georgia, "Times New Roman", serif;
+      }
+
+      article h1 a {
+        color: #145a8d;
+        text-decoration: none;
+      }
+
+      article h1 a:hover {
+        text-decoration: underline;
+      }
+
+      footer {
+        display: flex;
+        gap: 1.5rem;
+        margin-top: auto;
+        padding: 1.25rem 1.5rem;
+        background: #e8ecef;
+        font-family: Arial, sans-serif;
+      }
+
+      footer a {
+        color: #145a8d;
+        text-decoration: none;
+      }
+
+      footer a:hover {
+        text-decoration: underline;
+      }
+    </style>
   </head>
   <body>
-    <hl><centre>My Digital Notebook</centre></hl>
+    <header>
+      <a href="./">My Digital Notebook</a>
+    </header>
+    <nav aria-label="Main navigation">
+      <a href="blog1.html">Blog</a>
+    </nav>
+    <main>
+      <article>
+        <time datetime="2026-11-16">16 November 2026</time>
+        <h1><a href="blog1.html">Travelling to Hilbert space.</a></h1>
+      </article>
+    </main>
+    <footer>
+      <a href="mailto:your-email@example.com">Contact Me</a>
+      <a href="about.html">About Me</a>
+    </footer>
   </body>
 </html>
